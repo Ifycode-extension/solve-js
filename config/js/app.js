@@ -1,4 +1,4 @@
-import { RouterModule } from "./routes/routes.js";
+import { RouterModule } from './routes/routes.js';
 
 (() => {
     RouterModule();
