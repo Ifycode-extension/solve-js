@@ -1,4 +1,6 @@
 
+/* Styles specific to home view only */
+
 body > header h1.page-title {
     font-size: 3.5em;
     color: var(--themeColor);
@@ -19,7 +21,7 @@ body > article a{
     margin: 0 auto;
     border: 2px solid transparent;
     font-size: 1.3em;
-    color: rgb(41, 41, 41);
+    color: var(--textColor);
     box-shadow: 5px 5px 10px rgb(211, 211, 211);
     padding: 15px 20px;
     text-decoration: none;
@@ -37,6 +39,11 @@ body > article a:focus {
 body > div#root {
     display: none;
 }
+
+
+/*===========
+media-queries
+============*/
 
 @media screen and (min-width: 370px) {
     body > header h1.page-title {
@@ -58,19 +65,9 @@ body > div#root {
     }
 }
 
-@media screen and (min-width: 1010px) {
-    body > header {
-        max-width: 900px;
-    }
-}
-
 @media screen and (max-height: 400px) {
     body > header h1.page-title {
         font-size: 3.5em;
-    }
-    
-    body > header {
-        height: var(--header-sm);
     }
 }
 

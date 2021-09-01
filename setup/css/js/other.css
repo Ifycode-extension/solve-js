@@ -1,11 +1,8 @@
 
-body > div#root {
-    display: block;
-}
+/* Styles specific to other views: toggle, filter etc */
 
-h1.page-title {
-    font-size: 3.5em;
-    color: rgb(0, 0, 139);
+body > header h1.page-title {
+    font-size: 1.3em;
 }
 
 body > article {
@@ -16,3 +13,48 @@ body > header {
     justify-content: space-between;
 }
 
+body > header a#homeBtn {
+    font-size: 1.1em;
+    padding: 10px 15px;
+    color: var(--textColor);
+    border: 2px solid transparent;
+    border-bottom: 2px solid var(--textColor);
+    text-decoration: none;
+}
+
+body > header a#homeBtn:hover,
+body > header a#homeBtn:focus {
+    outline: none;
+    border-bottom: 2px solid var(--themeColor);
+    color: rgb(240, 64, 0);
+    box-shadow: 5px 5px 10px rgb(230, 230, 230);
+}
+
+body > div#root {
+    display: block;
+}
+
+
+/*===========
+media-queries
+============*/
+
+@media screen and (min-width: 370px) {
+    body > header h1.page-title {
+        font-size: 1.8em;
+    }
+
+    body > header a#homeBtn {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body > header h1.page-title {
+        font-size: 2.5em;
+    }
+
+    body > header a#homeBtn {
+        padding: 15px 20px;
+    }
+}

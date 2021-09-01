@@ -24,17 +24,17 @@ body > header {
     align-items: center;
 }
 
+body a {
+   display: block;
+}
+
 div#root > main,
 body > article  {
     height: calc(100vh - var(--header-sm));
 }
 
 div#root > main {
-    border: 2px solid var(--themeColor);
     height: calc(100vh - var(--header-sm));
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
 }
 
 div#root > main > * {
@@ -55,5 +55,22 @@ media-queries
     div#root > main,
     body > article  {
         height: calc(100vh - var(--header-lg));
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    body > header {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    body > header {
+        height: var(--header-sm);
+    }
+
+    div#root > main,
+    body > article  {
+        height: calc(100vh - var(--header-sm));
     }
 }
