@@ -15,6 +15,10 @@ export const RouterModule = (taskRoutes) => {
             name: 'Home'
         },
         {
+            path: '/toggle',
+            name: 'Toggle'
+        },
+        {
             path: '/filter',
             name: 'Filter'
         }
