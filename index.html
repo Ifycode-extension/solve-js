@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./setup/css/styles.css">
+    <link rel="stylesheet" href="">
+    <!--
+    <link rel="stylesheet" href="./setup/home/home.css">
+    -->
 </head>
 <body>
 
-    <h1 id="h1"></h1>
+    <header>
+        <h1 id="h1" class="page-title"></h1>
+        <a id="homeBtn" href="./index.html">Back to tasks</a>
+    </header>
+
     <article>
-        <a id="homeBtn" href="./index.html">Tasks</a>
-        <a id="toggleBtn" href="./solve/toggle/toggle.html">Toggle</a>
-        <a id="filterBtn" href="./solve/filter/filter.html">Filter</a>
+        <a id="toggleBtn" href="./solve/toggle/toggle.html">Task 1: Toggle Task</a>
+        <a id="filterBtn" href="./solve/filter/filter.html">Task 2: Filter Task</a>
     </article>
 
     <div id="root">
-       <main></main>
+       <main></main><!--attach Id attribute with javascript to prevent some one changing by mistake?-->
     </div>
 
     <script type="module" src="./setup/js/app.js"></script>

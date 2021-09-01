@@ -1,0 +1,18 @@
+
+body > div#root {
+    display: block;
+}
+
+h1.page-title {
+    font-size: 3.5em;
+    color: rgb(0, 0, 139);
+}
+
+body > article {
+    display: none;
+}
+
+body > header {
+    justify-content: space-between;
+}
+
