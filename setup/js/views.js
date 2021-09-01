@@ -1,11 +1,7 @@
-//import { FilterModule } from '../views/filter/filter.js';
-//import { ToggleModule } from '../views/toggle/toggle.js';
 
-let previousMain = document.querySelector('#root');
 
-export const LoadView = (htmlUrl, routePath) => {
-
-    // 3. Load page into view
+export const LoadView = (htmlUrl) => {
+    let previousMain = document.querySelector('#root > main');
 
     fetch(htmlUrl /*, options */)
     .then((response) => { return response.text() })
@@ -16,15 +12,6 @@ export const LoadView = (htmlUrl, routePath) => {
             let doc = parser.parseFromString(str, 'text/html');
             let fetchedMain = doc.body.querySelector('main');
             previousMain.parentNode.replaceChild(fetchedMain, previousMain);
-            
-            /*//TODO: load javascript on view change not on route change
-            if (routePath === '/filter') {
-                FilterModule();
-            }
-        
-            if (routePath === '/toggle') {
-                ToggleModule();
-            }*/
         }
         stringToHTML(htmlText);
     })
