@@ -1,4 +1,6 @@
 import { LoadView } from './views.js';
+import { ToggleModule } from '../../solve/toggle/toggle.js';
+import { FilterModule } from '../../solve/filter/filter.js';
 
 let homeBtn = document.querySelector('#homeBtn');
 let toggleBtn = document.querySelector('#toggleBtn');
@@ -33,10 +35,12 @@ toggleBtn.addEventListener('click', (e) => {
     e.preventDefault();
     common('Toggle', 'Task');
     LoadView('./solve/toggle/toggle.html');
+    ToggleModule();
 });
 
 filterBtn.addEventListener('click', (e) => {
     e.preventDefault();
     common('Filter', 'Task');
     LoadView('./solve/filter/filter.html');
+    FilterModule();
 });
