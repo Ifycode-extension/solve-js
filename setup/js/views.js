@@ -1,5 +1,4 @@
 
-
 export const LoadView = (htmlUrl) => {
     let previousMain = document.querySelector('#root > main');
 

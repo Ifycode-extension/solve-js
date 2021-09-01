@@ -5,6 +5,29 @@
     text-decoration: underline;
 }*/
 
+body {
+    padding: 20px 0;
+}
+
+body > * {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
 main {
     border: 2px solid orangered;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*assist*/
+
+.remove {
+    display: none;
+}
+
+.add {
+    display: block;
 }
