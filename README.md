@@ -7,13 +7,19 @@ Solve js is a client-only single page application containing vanilla javascript 
 * See **git instructions** and **how to pull changes** sections below for further instructions
 
 ## Git instructions
-* Create a repo named **solve-js** in your github account
-
-* Clone this repo onto your computer:
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`git clone git@github.com:gads-projects/solve-js.git`
-
-* 
+* Create a repo named **solve-js** in your own github account
+* Clone this (original) repo onto your computer: 
+````
+git clone git@github.com:gads-projects/solve-js.git
+````
+* Change remote origin to your own solve-js repo's url: 
+````
+git remote set-url origin your-own-solve-js-repo-url
+````
+* Add original repo as upstream (so that you can pull in any new task I add): 
+````
+git remote add upstream git@github.com:gads-projects/solve-js.git
+````
 
 ## How to submit
 You can
