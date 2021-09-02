@@ -1,12 +1,12 @@
 # Solve js
 Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are related to features generally found in web applications. Just run the application like you would run any html file in the browser. Readme is divided into the following sections:
-* Task instructions
-* Setup instructions
-* Branching instructions
-* Commiting and pushing your changes
-* How to submit
-* Pulling in new changes
-* Tasks to work on
+- [Task instructions](#task-instructions)
+- [Setup instructions](#setup-instructions)
+- [Branching instructions](#branching-instructions)
+- [Commiting and pushing your changes](#commiting-and-pushing-your-changes)
+- [How to submit](#how-to-submit)
+- [Pulling in new changes](#pulling-in-new-changes)
+- [Tasks to work on](#tasks-to-work-on)
 
 ## Task instructions
 * These are vanilla tasks (no libraries or frameworks)
