@@ -26,7 +26,7 @@ git remote -v
 ````
 
 ## Branching instructions
-Do not make any changes to the `main branch` (so has to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin. Your tasks should be done in a different branch. Create a branch named `solve-tasks` from your main branch:
+Do not make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin. Your tasks should be done in a different branch. Create a branch named `solve-tasks` from your main branch:
 ````
 git checkout -b solve-tasks
 ````
@@ -39,17 +39,17 @@ There'll be more tasks added along the way and in some cases minor fixes for the
 git checkout main
 ````
 
-Pull in a new tasks or changes with:
+* Pull in a new tasks or changes with:
 ````
 git pull upstream main
 ````
 
-Switch back to the solve-tasks branch
+* Switch back to the solve-tasks branch
 ````
 git checkout solve-tasks
 ````
 
-Merge changes into your branch:
+* Merge changes into the solve-tasks branch:
 ````
 git merge main
 ````
