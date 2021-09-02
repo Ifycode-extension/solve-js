@@ -35,6 +35,10 @@ body > div#root {
     display: block;
 }
 
+div#root > main  {
+    background:rgb(240, 240, 240);
+}
+
 
 /*===========
 media-queries
