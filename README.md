@@ -2,7 +2,7 @@
 Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are related to features generally found in web applications. Just run the application like you would run any html file in the browser.
 
 ## Task instructions
-* Your solutions should be built from scratch (no libraries or frameworks)
+* These are vanilla tasks (no libraries or frameworks)
 * You will find tasks (arranged in their respective folders) inside the `solve` folder
 * DO NOT make changes to any file that is not in the `solve` folder
 * See all sections below for further instructions
