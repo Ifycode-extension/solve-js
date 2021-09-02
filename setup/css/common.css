@@ -37,11 +37,6 @@ div#root > main {
     height: calc(100vh - var(--header-sm));
 }
 
-div#root > main > * {
-    width: max-content;
-    margin: 0 auto;
-}
-
 
 /*===========
 media-queries
