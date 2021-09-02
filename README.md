@@ -4,7 +4,7 @@ Solve js is a client-only single page application containing vanilla javascript 
 ## Task instructions
 * You will find tasks (arranged in their respective folders) inside the `solve` folder
 * DO NOT make changes to any file that is not in the `solve` folder
-* See **setup instructions**, **branching instructions** and **pulling in new changes** sections below for further instructions
+* See all sections below for further instructions
 
 ## Setup instructions
 * Create a repo named **solve-js** in your own github account
@@ -31,6 +31,29 @@ Do not make any changes to the `main branch` (to avoid problems). The only thing
 git checkout -b solve-tasks
 ````
 
+## Commiting and pushing your changes
+Once you are satisfied with your solution, you can so the following:
+* Stage your changes:
+````
+git add .
+````
+* Commit your ahanges:
+````
+git commit -m "Write your commit message here"
+````
+Next, push your solution from your local computer to the remote (origin).
+* Use this the first time you push:
+````
+git push -u origin solve-tasks
+````
+* Use this every other time:
+````
+git push
+````
+
+## How to submit
+Follow the steps in **commiting and pushing your changes** section, and submit the link to your **solve-js** repo.
+
 ## Pulling in new changes
 
 There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. Pull in changes from the upstream and merge into your created branch with these:
@@ -54,9 +77,14 @@ git checkout solve-tasks
 git merge main
 ````
 
-## How to submit
-You can
+# Tasks to work on
+
 ## Task 1: Toggle task
+
+Find files to work with in the `toggle` folder inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
 
 |![solvejs-toggle](https://user-images.githubusercontent.com/45185388/131866859-adb49d23-710b-4d89-a602-e146273fd785.gif)|
 |--|
+
+## Task 2: Filter task
+Filter and all other tasks coming soon
