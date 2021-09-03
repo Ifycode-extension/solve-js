@@ -45,8 +45,15 @@ git remote -v
 ## Check that setup is successful
 To check that the change of remote origin to your own repo is successful, try to push the cloned project to the solve-js repo you created in your own github account. Do this: 
 ````
+git push origin main
+````
+
+<!--
+````
 git push -u origin main
 ````
+-->
+
 Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
 
 ## Branching instructions
@@ -77,7 +84,12 @@ git add .
 ````
 git commit -m "Write your commit message here"
 ````
-Next, push your solution from your local computer to the remote (origin).
+* Next, push your solution from your local computer to the remote (origin):
+````
+git push origin solve-tasks
+````
+
+<!--
 * Use this the first time you push:
 ````
 git push -u origin solve-tasks
@@ -91,6 +103,7 @@ git push
 ````
 git push origin solve-tasks
 ````
+-->
 
 ## How to submit
 Follow the steps in **commiting and pushing your changes** section, and submit the link to your **solve-js** repo.
