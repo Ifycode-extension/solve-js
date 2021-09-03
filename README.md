@@ -125,7 +125,7 @@ git merge main
 
 # How to run and use app
 
-[![solvejs-video-thumbnail](https://user-images.githubusercontent.com/45185388/132043799-6083c36b-9804-44d8-affb-aeebbe7278f9.png)](https://youtu.be/7dcwFJtyzoM)
+[![solvejs-video-thumbnail](https://user-images.githubusercontent.com/45185388/132043799-6083c36b-9804-44d8-affb-aeebbe7278f9.png)](https://www.youtube.com/watch?v=7dcwFJtyzoM)
 
 # Tasks to work on
 
