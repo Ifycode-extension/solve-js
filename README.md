@@ -23,6 +23,10 @@ Solve js is a client-only single page application containing vanilla javascript 
 ````
 git clone git@github.com:gads-projects/solve-js.git
 ````
+* Cd into the project you just cloned:
+````
+cd solve-js
+````
 * Change remote origin to your own solve-js repo's url: 
 ````
 git remote set-url origin your-own-solve-js-repo-url
