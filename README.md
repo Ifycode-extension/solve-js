@@ -19,7 +19,7 @@ Solve js is a client-only single page application containing vanilla javascript 
 * See all sections below for further instructions
 
 ## Setup instructions
-* Create a repo named **solve-js** in your own github account
+* Create a repo named **solve-js** in your own github account (do not initialize with a readme or any other file, just make sure the repo is empty)
 * Clone this (original) repo onto your computer: 
 ````
 git clone git@github.com:gads-projects/solve-js.git
@@ -49,13 +49,25 @@ git push -u origin main
 Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
 
 ## Branching instructions
-Do not make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin (like we did in the **check that setup is successful** section). Your tasks should be done in a different branch. Create a branch named `solve-tasks` from your main branch:
+DO NOT make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin (like we did in the **check that setup is successful** section). 
+
+**Note**: Your solution to the tasks should be done in the `solve-tasks` branch. Create a branch named `solve-tasks` from your main branch:
 ````
 git checkout -b solve-tasks
 ````
 
+Always confirm the branch you are in with:
+````
+git branch
+````
+
+To switch from one branch to another use:
+````
+git checkout branch-name-here
+````
+
 ## Commiting and pushing your changes
-Once you are satisfied with your solution, you can so the following:
+Once you are satisfied with your solution, you can do the following:
 * Stage your changes:
 ````
 git add .
@@ -69,9 +81,14 @@ Next, push your solution from your local computer to the remote (origin).
 ````
 git push -u origin solve-tasks
 ````
-* Use this every other time:
+* Use this every other time (which ever works for you):
 ````
 git push
+````
+&nbsp;&nbsp;&nbsp; or
+
+````
+git push origin solve-tasks
 ````
 
 ## How to submit
@@ -79,7 +96,7 @@ Follow the steps in **commiting and pushing your changes** section, and submit t
 
 ## Pulling in new changes
 
-There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. Pull in changes from the upstream and merge into your created branch with these:
+There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. You can always pull in changes from the upstream and merge into your created branch with these:
 * Switch to the main branch:
 ````
 git checkout main
