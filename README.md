@@ -10,6 +10,7 @@ Solve js is a client-only single page application containing vanilla javascript 
 - [Commiting and pushing your changes](#commiting-and-pushing-your-changes)
 - [How to submit](#how-to-submit)
 - [Pulling in new changes](#pulling-in-new-changes)
+- [How to run and use app](#how-to-run-and-use-app)
 - [Tasks to work on](#tasks-to-work-on)
 
 ## Task instructions
@@ -121,6 +122,10 @@ git checkout solve-tasks
 ````
 git merge main
 ````
+
+# How to run and use app
+
+[![solvejs-video-thumbnail](https://user-images.githubusercontent.com/45185388/132043799-6083c36b-9804-44d8-affb-aeebbe7278f9.png)](https://youtu.be/7dcwFJtyzoM)
 
 # Tasks to work on
 
