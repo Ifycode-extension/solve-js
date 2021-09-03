@@ -102,17 +102,22 @@ There'll be more tasks added along the way and in some cases minor fixes for the
 git checkout main
 ````
 
-* Pull in a new tasks or changes with:
+* Pull in a new tasks or changes to your local computer with:
 ````
 git pull upstream main
 ````
 
-* Switch back to the solve-tasks branch
+* You can choose to update your main branch on github with:
+````
+git push origin main
+````
+
+* Make sure to switch back to the solve-tasks branch:
 ````
 git checkout solve-tasks
 ````
 
-* Merge changes into the solve-tasks branch:
+* Then merge changes into the solve-tasks branch:
 ````
 git merge main
 ````
