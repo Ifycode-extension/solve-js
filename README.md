@@ -2,7 +2,7 @@
 |<img width="1101" alt="solvejs-image" src="https://user-images.githubusercontent.com/45185388/131930669-dd2829c1-a4e4-4154-b8e2-e5e7c03321e8.png">|
 |--|
 
-Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are related to features generally found in web applications. Just run the application like you would run any html file in the browser. Readme is divided into the following sections:
+Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Just run the application like you would run any html file in the browser. Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
 - [Branching instructions](#branching-instructions)
@@ -12,7 +12,7 @@ Solve js is a client-only single page application containing vanilla javascript 
 - [Tasks to work on](#tasks-to-work-on)
 
 ## Task instructions
-* These are vanilla tasks (no libraries or frameworks)
+* These are vanilla tasks (no use of libraries or frameworks please)
 * You will find tasks (arranged in their respective folders) inside the `solve` folder
 * DO NOT make changes to any file that is not in the `solve` folder
 * See all sections below for further instructions
