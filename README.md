@@ -5,6 +5,7 @@
 Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Just run the application like you would run any html file in the browser. Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
+- [Check that setup is successful](#check-that-setup-is-successful)
 - [Branching instructions](#branching-instructions)
 - [Commiting and pushing your changes](#commiting-and-pushing-your-changes)
 - [How to submit](#how-to-submit)
@@ -40,8 +41,15 @@ git remote add upstream git@github.com:gads-projects/solve-js.git
 git remote -v
 ````
 
+## Check that setup is successful
+To check that the change of remote origin to your own repo is successful, try to push the cloned project to the solve-js repo you created in your own github account. Do this: 
+````
+git push -u origin main
+````
+Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
+
 ## Branching instructions
-Do not make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin. Your tasks should be done in a different branch. Create a branch named `solve-tasks` from your main branch:
+Do not make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin (like we did in the **check that setup is successful** section). Your tasks should be done in a different branch. Create a branch named `solve-tasks` from your main branch:
 ````
 git checkout -b solve-tasks
 ````
