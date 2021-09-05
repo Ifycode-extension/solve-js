@@ -7,6 +7,28 @@ import { fixGlitch } from './styles.js';
     let link = document.querySelector('#link');
     let viewsLink = document.querySelector('#viewsLink');
 
+    let Routes = function(name, routes) {
+        return {
+            name: name,
+            routes: routes
+        }
+    }
+
+    let tasksRoutes = new Routes('tasksRoutes', [
+        {
+            name:'Toggle Task',
+            task: 'toggle'
+        },
+        {
+            name:'Filter Task',
+            task: 'filter'
+        },
+        {
+            name:'Fetch Task',
+            task: 'fetch'
+        }
+    ]);
+
     let linkHref = (path, viewspath) => {
         link.href = path;
         viewsLink.href = viewspath;
@@ -19,20 +41,13 @@ import { fixGlitch } from './styles.js';
             LoadView('./setup/home/home.html', title);
             linkHref('./setup/css/js/home.css', homeviewCSS);
             restoreStyle();
-        }else {
+        } else {
+            let task = tasksRoutes.routes.filter(taskRoute => {
+                return taskRoute.name === title;
+            })[0];
             let otherviewsCSS = './setup/css/js/other.css';
-            if (title === 'Toggle Task') {
-                LoadView('./solve/toggle/toggle.html', title);
-                linkHref(otherviewsCSS, './solve/toggle/toggle.css');
-            }
-            if (title === 'Filter Task') {
-                LoadView('./solve/filter/filter.html', title);
-                linkHref(otherviewsCSS, './solve/filter/filter.css');
-            }
-            if (title === 'Fetch Task') {
-                LoadView('./solve/fetch/fetch.html', title);
-                linkHref(otherviewsCSS, './solve/fetch/fetch.css');
-            }
+            LoadView(`./solve/${task.task}/${task.task}.html`, title);
+            linkHref(otherviewsCSS, `./solve/${task.task}/${task.task}.css`);
             fixGlitch();
         }
     }

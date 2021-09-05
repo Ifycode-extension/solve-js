@@ -1,9 +1,8 @@
-import { JsLoadRouter } from './router.js';
+import { JsLoadRouter } from './jsload.js';
 
 export const LoadView = (htmlUrl, title) => {
     let previousMain = document.querySelector('#root > main');
-    let h1 = document.querySelector('#h1');
-
+    
     fetch(htmlUrl /*, options */)
     .then((response) => { return response.text() })
     .then((htmlText) => {
