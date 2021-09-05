@@ -28,6 +28,12 @@ body a {
    display: block;
 }
 
+body a:hover, 
+body a:focus {
+     transition: color 0.2s linear,
+                 border 0.17s linear;
+}
+
 div#root > main,
 body > article  {
     height: calc(100vh - var(--header-sm));

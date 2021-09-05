@@ -54,6 +54,9 @@ button {
     background: #0808ca;
     width: 100%;
     color: white;
+    transition: color 0.2s linear,
+                border 0.17s linear,
+                background-color 0.17s linear;
 }
 
 button:hover, button:focus {

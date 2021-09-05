@@ -1,9 +1,8 @@
 import { LoadView } from './views.js';
+import { restoreStyle } from './styles.js';
+import { fixGlitch } from './styles.js';
 
 (() => {
-    let homeBtn = document.querySelector('#homeBtn');
-    let toggleBtn = document.querySelector('#toggleBtn');
-    let filterBtn = document.querySelector('#filterBtn');
     let h1 = document.querySelector('#h1');
     let link = document.querySelectorAll('link')[1];
     let viewsLink = document.querySelector('#viewsLink');
@@ -12,75 +11,49 @@ import { LoadView } from './views.js';
         link.href = path;
         viewsLink.href = viewspath;
     }
-    
+
     let common = (title) => {
-        //console.log(title);
         h1.innerHTML = title;
-        if (h1.innerHTML === 'Solve js') {
+        if (title === 'Solve js') {
             let homeviewCSS = './setup/home/home.css';
-            LoadView('./setup/home/home.html');
+            LoadView('./setup/home/home.html', title);
             linkHref('./setup/css/js/home.css', homeviewCSS);
+            restoreStyle();
         }else {
             let otherviewsCSS = './setup/css/js/other.css';
-            if (h1.innerHTML === 'Toggle Task') {
-                LoadView('./solve/toggle/toggle.html');
+            if (title === 'Toggle Task') {
+                LoadView('./solve/toggle/toggle.html', title);
                 linkHref(otherviewsCSS, './solve/toggle/toggle.css');
             }
-            if (h1.innerHTML === 'Filter Task') {
-                LoadView('./solve/filter/filter.html');
+            if (title === 'Filter Task') {
+                LoadView('./solve/filter/filter.html', title);
                 linkHref(otherviewsCSS, './solve/filter/filter.css');
             }
+            fixGlitch();
         }
     }
 
-    let setTitleStorage = (title) => {
-        localStorage.setItem('pageTitle', title);
+    let aRoutes = Array.from(document.querySelectorAll('[route]'));
+
+    let navigate = (event) => {
+        h1.classList.add('font-transition');
+        event.preventDefault();
+        let route = event.target.attributes[0].value;
+        common(route);
+        localStorage.setItem('pageTitle', route);
     }
 
-    common('Solve js');
-    //setTitleStorage('Solve js');
-    
-    homeBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        common('Solve js');
-        setTitleStorage('Solve js');
+    aRoutes.forEach(a => {
+        a.addEventListener('click', navigate, false);
     });
-    
-    toggleBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        common('Toggle Task');
-        setTitleStorage('Toggle Task');
-    });
-    
-    filterBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        common('Filter Task');
-        setTitleStorage('Filter Task');
-    });
-    
-    //localStorage.clear();
 
     window.onload = function() {
-        
-        let title = localStorage.getItem('pageTitle');
-        common(title);
-
-
-
-
-
-        //h1.innerHTML = title;
-        //if (h1.innerHTML === 'Toggle Task') h1.innerHTML = title;
-
-        /*if (h1.innerHTML === 'Toggle Task') {
-            LoadView('./solve/toggle/toggle.html');
-            linkHref('./setup/css/js/other.css', './solve/toggle/toggle.css');
-        }*/
-                //linkHref(otherviewsCSS, './solve/toggle/toggle.css');
-
-        /*
-        let reloadTitle = localStorage.getItem('h1-title');
-        //h1.innerHTML = reloadTitle;
-        common(reloadTitle, '');*/
+        h1.classList.remove('font-transition');
+        let getItem = localStorage.getItem('pageTitle');
+        if (getItem !== null) {
+            common(getItem);
+        } else {
+            common('Solve js');
+        }
     }
 })();

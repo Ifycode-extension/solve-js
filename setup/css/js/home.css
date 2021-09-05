@@ -11,12 +11,13 @@ body > header a {
    display: none;
 }
 
-body > article {
-    display: flex;
+body > article { /* ONE */
+    /*display: flex;*/
     flex-direction: column;
 }
 
 body > article a{
+    display: none; /* TWO */
     width: 85%;
     margin: 0 auto;
     border: 2px solid transparent;
