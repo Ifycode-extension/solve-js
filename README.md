@@ -2,26 +2,32 @@
 |<img width="1101" alt="solvejs-image" src="https://user-images.githubusercontent.com/45185388/131930669-dd2829c1-a4e4-4154-b8e2-e5e7c03321e8.png">|
 |--|
 
-Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are related to features generally found in web applications. Just run the application like you would run any html file in the browser. Readme is divided into the following sections:
+Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Just run the application (the index.html file) like you would run any html project in the browser. Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
+- [Check that setup is successful](#check-that-setup-is-successful)
 - [Branching instructions](#branching-instructions)
 - [Commiting and pushing your changes](#commiting-and-pushing-your-changes)
 - [How to submit](#how-to-submit)
 - [Pulling in new changes](#pulling-in-new-changes)
+- [How to run and use app](#how-to-run-and-use-app)
 - [Tasks to work on](#tasks-to-work-on)
 
 ## Task instructions
-* These are vanilla tasks (no libraries or frameworks)
+* These are vanilla tasks (no use of libraries or frameworks please)
 * You will find tasks (arranged in their respective folders) inside the `solve` folder
 * DO NOT make changes to any file that is not in the `solve` folder
 * See all sections below for further instructions
 
 ## Setup instructions
-* Create a repo named **solve-js** in your own github account
+* Create a repo named **solve-js** in your own github account (do not initialize with a readme or any other file, just make sure the repo is empty)
 * Clone this (original) repo onto your computer: 
 ````
 git clone git@github.com:gads-projects/solve-js.git
+````
+* Cd into the project you just cloned:
+````
+cd solve-js
 ````
 * Change remote origin to your own solve-js repo's url: 
 ````
@@ -36,14 +42,40 @@ git remote add upstream git@github.com:gads-projects/solve-js.git
 git remote -v
 ````
 
+## Check that setup is successful
+To check that the change of remote origin to your own repo is successful, try to push the cloned project to the solve-js repo you created in your own github account. Do this: 
+````
+git push origin main
+````
+
+<!--
+````
+git push -u origin main
+````
+-->
+
+Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
+
 ## Branching instructions
-Do not make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin. Your tasks should be done in a different branch. Create a branch named `solve-tasks` from your main branch:
+DO NOT make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin (like we did in the **check that setup is successful** section). 
+
+**Note**: Your solution to the tasks should be done in the `solve-tasks` branch. Create a branch named `solve-tasks` from your main branch:
 ````
 git checkout -b solve-tasks
 ````
 
+Always confirm the branch you are in with:
+````
+git branch
+````
+
+To switch from one branch to another use:
+````
+git checkout branch-name-here
+````
+
 ## Commiting and pushing your changes
-Once you are satisfied with your solution, you can so the following:
+Once you are satisfied with your solution, you can do the following:
 * Stage your changes:
 ````
 git add .
@@ -52,41 +84,61 @@ git add .
 ````
 git commit -m "Write your commit message here"
 ````
-Next, push your solution from your local computer to the remote (origin).
+* Next, push your solution from your local computer to the remote (origin):
+````
+git push origin solve-tasks
+````
+
+<!--
 * Use this the first time you push:
 ````
 git push -u origin solve-tasks
 ````
-* Use this every other time:
+* Use this every other time (which ever works for you):
 ````
 git push
 ````
+&nbsp;&nbsp;&nbsp; or
+
+````
+git push origin solve-tasks
+````
+-->
 
 ## How to submit
 Follow the steps in **commiting and pushing your changes** section, and submit the link to your **solve-js** repo.
 
 ## Pulling in new changes
 
-There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. Pull in changes from the upstream and merge into your created branch with these:
+There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. You can always pull in changes from the upstream and merge into your created branch with these:
 * Switch to the main branch:
 ````
 git checkout main
 ````
 
-* Pull in a new tasks or changes with:
+* Pull in a new tasks or changes to your local computer with:
 ````
 git pull upstream main
 ````
 
-* Switch back to the solve-tasks branch
+* You can choose to update your main branch on github with:
+````
+git push origin main
+````
+
+* Make sure to switch back to the solve-tasks branch:
 ````
 git checkout solve-tasks
 ````
 
-* Merge changes into the solve-tasks branch:
+* Then merge changes into the solve-tasks branch:
 ````
 git merge main
 ````
+
+# How to run and use app
+
+[![solvejs-video-thumbnail](https://user-images.githubusercontent.com/45185388/132043799-6083c36b-9804-44d8-affb-aeebbe7278f9.png)](https://www.youtube.com/watch?v=7dcwFJtyzoM)
 
 # Tasks to work on
 
