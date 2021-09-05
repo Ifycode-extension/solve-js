@@ -29,6 +29,10 @@ import { fixGlitch } from './styles.js';
                 LoadView('./solve/filter/filter.html', title);
                 linkHref(otherviewsCSS, './solve/filter/filter.css');
             }
+            if (title === 'Fetch Task') {
+                LoadView('./solve/filter/filter.html', title);
+                linkHref(otherviewsCSS, './solve/filter/filter.css');
+            }
             fixGlitch();
         }
     }
