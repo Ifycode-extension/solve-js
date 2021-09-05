@@ -36,15 +36,17 @@ import { fixGlitch } from './styles.js';
 
     let common = (title) => {
         h1.innerHTML = title;
+        let task = tasksRoutes.routes.filter(taskRoute => {
+            return taskRoute.name === title;
+        })[0];
         if (title === 'Solve js') {
+            document.title = 'Solve js | Home';
             let homeviewCSS = './setup/home/home.css';
             LoadView('./setup/home/home.html', title);
             linkHref('./setup/css/js/home.css', homeviewCSS);
             restoreStyle();
         } else {
-            let task = tasksRoutes.routes.filter(taskRoute => {
-                return taskRoute.name === title;
-            })[0];
+            document.title = `Solve js | ${task.name}`;
             let otherviewsCSS = './setup/css/js/other.css';
             LoadView(`./solve/${task.task}/${task.task}.html`, title);
             linkHref(otherviewsCSS, `./solve/${task.task}/${task.task}.css`);
