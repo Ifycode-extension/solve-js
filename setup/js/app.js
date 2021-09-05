@@ -4,7 +4,7 @@ import { fixGlitch } from './styles.js';
 
 (() => {
     let h1 = document.querySelector('#h1');
-    let link = document.querySelectorAll('link')[1];
+    let link = document.querySelector('#link');
     let viewsLink = document.querySelector('#viewsLink');
 
     let linkHref = (path, viewspath) => {
@@ -30,8 +30,8 @@ import { fixGlitch } from './styles.js';
                 linkHref(otherviewsCSS, './solve/filter/filter.css');
             }
             if (title === 'Fetch Task') {
-                LoadView('./solve/filter/filter.html', title);
-                linkHref(otherviewsCSS, './solve/filter/filter.css');
+                LoadView('./solve/fetch/fetch.html', title);
+                linkHref(otherviewsCSS, './solve/fetch/fetch.css');
             }
             fixGlitch();
         }
@@ -40,8 +40,8 @@ import { fixGlitch } from './styles.js';
     let aRoutes = Array.from(document.querySelectorAll('[route]'));
 
     let navigate = (event) => {
-        h1.classList.add('font-transition');
         event.preventDefault();
+        h1.classList.add('font-transition');
         let route = event.target.attributes[0].value;
         common(route);
         localStorage.setItem('pageTitle', route);

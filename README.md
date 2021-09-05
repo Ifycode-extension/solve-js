@@ -2,7 +2,7 @@
 |<img width="1101" alt="solvejs-image" src="https://user-images.githubusercontent.com/45185388/131930669-dd2829c1-a4e4-4154-b8e2-e5e7c03321e8.png">|
 |--|
 
-Solve js is a client-only single page application containing vanilla javascript tasks (for development purpose only). The tasks are based on features generally found in web applications. Just run the application like you would run any html project in the browser e.g. with VScode live server (extension). Readme is divided into the following sections:
+Solve js is a client-only single page application made by [@Ifycode](https://github.com/Ifycode) containing vanilla javascript tasks (for development purpose only). The tasks are based on features generally found in web applications. Just run the application like you would run any html project in the browser e.g. with VScode live server (extension). Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
 - [Check that setup is successful](#check-that-setup-is-successful)
@@ -48,12 +48,6 @@ To check that the change of remote origin to your own repo is successful, try to
 git push origin main
 ````
 
-<!--
-````
-git push -u origin main
-````
--->
-
 Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
 
 ## Branching instructions
@@ -88,22 +82,6 @@ git commit -m "Write your commit message here"
 ````
 git push origin solve-tasks
 ````
-
-<!--
-* Use this the first time you push:
-````
-git push -u origin solve-tasks
-````
-* Use this every other time (which ever works for you):
-````
-git push
-````
-&nbsp;&nbsp;&nbsp; or
-
-````
-git push origin solve-tasks
-````
--->
 
 ## How to submit
 Follow the steps in **commiting and pushing your changes** section, and submit the link to your **solve-js** repo.
