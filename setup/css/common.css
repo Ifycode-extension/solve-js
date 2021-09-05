@@ -2,11 +2,13 @@
 @font-face {
     font-family: 'Amita';
     src: url('../fonts/Amita/Amita-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-display: swap;
 }
 
 body {
