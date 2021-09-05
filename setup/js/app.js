@@ -34,7 +34,7 @@ import { fixGlitch } from './styles.js';
         viewsLink.href = viewspath;
     }
 
-    let common = (title) => {
+    let changeViewContent = (title) => {
         h1.innerHTML = title;
         let task = tasksRoutes.routes.filter(taskRoute => {
             return taskRoute.name === title;
@@ -60,7 +60,7 @@ import { fixGlitch } from './styles.js';
         event.preventDefault();
         h1.classList.add('font-transition');
         let route = event.target.attributes[0].value;
-        common(route);
+        changeViewContent(route);
         localStorage.setItem('pageTitle', route);
     }
 
@@ -72,9 +72,9 @@ import { fixGlitch } from './styles.js';
         h1.classList.remove('font-transition');
         let getItem = localStorage.getItem('pageTitle');
         if (getItem !== null) {
-            common(getItem);
+            changeViewContent(getItem);
         } else {
-            common('Solve js');
+            changeViewContent('Solve js');
         }
     }
 })();
