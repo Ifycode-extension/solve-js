@@ -21,9 +21,6 @@ body > header a#homeBtn {
     border: 2px solid transparent;
     border-radius: 5px;
     text-decoration: none;
-    transition: color 0.2s linear,
-                border 0.17s linear,
-                background-color 0.17s linear;
 }
 
 body > header a#homeBtn:hover,
@@ -34,6 +31,9 @@ body > header a#homeBtn:focus {
     border-bottom: 2px solid var(--themeColor);
     color: rgb(240, 64, 0);
     box-shadow: 5px 5px 10px rgb(230, 230, 230);
+    transition: color 0.2s linear,
+                border 0.17s linear,
+                background-color 0.17s linear;
 }
 
 body > div#root {
@@ -53,19 +53,23 @@ section {
 }
 
 button {
+    outline: none;
     font-size: 1.1em;
     padding: 10px 15px;
     border-radius: 5px;
-    background: #0808ca;
+    background: var(--textColor);
     width: 100%;
     color: white;
+    box-shadow: 1px 1px 15px #c5c5c5;
     transition: color 0.2s linear,
                 border 0.17s linear,
                 background-color 0.17s linear;
 }
 
 button:hover, button:focus {
-    background: #1f1feb;
+    background: white;
+    color: var(--textColor);
+    border-bottom: 3px solid var(--textColor);
 }
 
 

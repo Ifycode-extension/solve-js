@@ -36,10 +36,7 @@ body a:focus {
                  border 0.17s linear;
 }
 
-body > article  {
-    height: calc(100vh - var(--header-sm));
-}
-
+body > article,
 div#root > main {
     min-height: calc(100vh - var(--header-sm));
     height: unset;
@@ -55,10 +52,7 @@ media-queries
         height: var(--header-lg);
     }
 
-    body > article  {
-        height: calc(100vh - var(--header-lg));
-    }
-
+    body > article, 
     div#root > main {
         min-height: calc(100vh - var(--header-lg));
     }
@@ -75,10 +69,7 @@ media-queries
         height: var(--header-sm);
     }
 
-    body > article  {
-        height: calc(100vh - var(--header-sm));
-    }
-
+    body > article, 
     div#root > main {
         min-height: calc(100vh - var(--header-sm));
     }

@@ -72,13 +72,6 @@ section > div:nth-child(2) > div:nth-child(6) > span:nth-child(2) {
     color: var(--textColor);
 }
 
-button, 
-button:hover,
-button:focus {
-    outline: none;
-    background: var(--textColor);
-}
-
 button {
     width: unset;
     font-size: unset;
@@ -86,7 +79,10 @@ button {
     margin: 0 5px 0 0;
     padding: 8px 10px;
     border: 3px solid transparent;
-    box-shadow: 1px 1px 15px #c5c5c5;
+}
+
+button:not(button:nth-of-type(1)) {
+    background: var(--textColor);
 }
 
 button > span {
@@ -95,12 +91,6 @@ button > span {
 
 button:nth-child(1) {
     margin: 0 5px 0 auto;
-}
-
-button:nth-child(1):hover, button:nth-child(1):focus {
-    background: white;
-    color: var(--textColor);
-    border-bottom: 3px solid var(--textColor);
 }
 
 button:nth-child(2):hover, button:nth-child(2):focus {
