@@ -5,6 +5,7 @@ import { fixGlitch } from './styles.js';
 (() => {
     let h1 = document.querySelector('#h1');
     let link = document.querySelector('#link');
+    let linkExt = document.querySelector('#linkExtension');
     let viewsLink = document.querySelector('#viewsLink');
 
     let Routes = function(name, routes) {
@@ -29,9 +30,14 @@ import { fixGlitch } from './styles.js';
         }
     ]);
 
-    let linkHref = (path, viewspath) => {
+    let linkHref = (path, pathExt, viewspath) => {
         link.href = path;
         viewsLink.href = viewspath;
+        if (pathExt !== null) {
+            linkExt.href = pathExt;
+        } else {
+            linkExt.removeAttribute('href');
+        }
     }
 
     let changeViewContent = (title) => {
@@ -43,13 +49,13 @@ import { fixGlitch } from './styles.js';
             document.title = 'Solve js | Home';
             let homeviewCSS = './setup/home/home.css';
             LoadView('./setup/home/home.html', title);
-            linkHref('./setup/css/js/home.css', homeviewCSS);
+            linkHref('./setup/css/js/home.css',null, homeviewCSS);
             restoreStyle();
         } else {
             document.title = `Solve js | ${task.name}`;
             let otherviewsCSS = './setup/css/js/other.css';
             LoadView(`./solve/${task.task}/${task.task}.html`, title);
-            linkHref(otherviewsCSS, `./solve/${task.task}/${task.task}.css`);
+            linkHref(otherviewsCSS, `./setup/css/js/other-ext/${task.task}.css`, `./solve/${task.task}/${task.task}.css`);
             fixGlitch();
         }
     }
