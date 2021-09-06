@@ -16,15 +16,20 @@ body > header {
 body > header a#homeBtn {
     font-size: 1.1em;
     padding: 10px 15px;
-    color: var(--textColor);
-    border: 2px solid #535353;
+    background: var(--textColor);
+    color: white;
+    border: 2px solid transparent;
     border-radius: 5px;
     text-decoration: none;
+    transition: color 0.2s linear,
+                border 0.17s linear,
+                background-color 0.17s linear;
 }
 
 body > header a#homeBtn:hover,
 body > header a#homeBtn:focus {
     outline: none;
+    background: white;
     border: 2px solid transparent;
     border-bottom: 2px solid var(--themeColor);
     color: rgb(240, 64, 0);
@@ -36,7 +41,7 @@ body > div#root {
 }
 
 div#root > main  {
-    background:rgba(240, 240, 240, 0.7);
+    background: var(--greyLight);
     padding: 50px 0 0 0;
 }
 

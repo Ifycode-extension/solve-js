@@ -33,7 +33,7 @@ body > article a:hover,
 body > article a:focus {
     outline: none;
     border-bottom: 2px solid var(--themeColor);
-    color: rgb(240, 64, 0);
+    color: #f04000;
     box-shadow: 5px 5px 10px rgb(230, 230, 230);
 }
 
