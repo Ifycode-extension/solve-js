@@ -2,7 +2,9 @@
 |<img width="1101" alt="solvejs-image" src="https://user-images.githubusercontent.com/45185388/131930669-dd2829c1-a4e4-4154-b8e2-e5e7c03321e8.png">|
 |--|
 
-Solve js is a client-only single page application made by [@Ifycode](https://github.com/Ifycode) containing vanilla javascript tasks (for development purpose only). The tasks are based on features generally found in web applications. Just run the application like you would run any html project in the browser e.g. with VScode live server (extension). Readme is divided into the following sections:
+> To work on solve js tasks, just run the application on your local computer like you would run any html project e.g. with VScode live server (extension). Work is still going on to make the solve js project suitable for production.
+
+Solve js is a client-only single page application made by [@Ifycode](https://github.com/Ifycode) containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
 - [Check that setup is successful](#check-that-setup-is-successful)
