@@ -124,10 +124,15 @@ git merge main
 
 ## Task 1: Toggle task
 
-Find files to work with in the `toggle` folder inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
+Find files to work with in the `toggle` folder which is inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
 
 |![solvejs-toggle](https://user-images.githubusercontent.com/45185388/131866859-adb49d23-710b-4d89-a602-e146273fd785.gif)|
 |--|
 
 ## Task 2: Filter task
-Filter and all other tasks coming soon
+Find files to work with in the `filter` folder which is inside the `solve` folder. Filter content based on colors as shown in the .gif image below. <!-- Display all content when the "All Colors" button is clicked on, and only display a specific color -->
+
+|![solvejs-filter](https://user-images.githubusercontent.com/45185388/132273158-c074ff67-ba31-41fe-a982-acf1f71ae5a3.gif)|
+|--|
+
+
