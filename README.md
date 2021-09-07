@@ -2,7 +2,9 @@
 |<img width="1101" alt="solvejs-image" src="https://user-images.githubusercontent.com/45185388/131930669-dd2829c1-a4e4-4154-b8e2-e5e7c03321e8.png">|
 |--|
 
-Solve js is a client-only single page application made by [@Ifycode](https://github.com/Ifycode) containing vanilla javascript tasks (for development purpose only). The tasks are based on features generally found in web applications. Just run the application like you would run any html project in the browser e.g. with VScode live server (extension). Readme is divided into the following sections:
+> To work on solve js tasks, just run the application on your local computer like you would run any html project e.g. with VScode live server (extension). Work is still going on to make the solve js project suitable for production.
+
+Solve js is a client-only single page application made by [@Ifycode](https://github.com/Ifycode) containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
 - [Check that setup is successful](#check-that-setup-is-successful)
@@ -122,10 +124,15 @@ git merge main
 
 ## Task 1: Toggle task
 
-Find files to work with in the `toggle` folder inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
+Find files to work with in the `toggle` folder which is inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
 
 |![solvejs-toggle](https://user-images.githubusercontent.com/45185388/131866859-adb49d23-710b-4d89-a602-e146273fd785.gif)|
 |--|
 
 ## Task 2: Filter task
-Filter and all other tasks coming soon
+Find files to work with in the `filter` folder which is inside the `solve` folder. Filter content based on colors as shown in the .gif image below. <!-- Display all content when the "All Colors" button is clicked on, and only display a specific color -->
+
+|![solvejs-filter](https://user-images.githubusercontent.com/45185388/132273158-c074ff67-ba31-41fe-a982-acf1f71ae5a3.gif)|
+|--|
+
+
