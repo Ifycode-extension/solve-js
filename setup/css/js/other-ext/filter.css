@@ -20,7 +20,17 @@ section > div:nth-child(2) {
 }
 
 section > div:nth-child(2) > * {
-    display: flex;
+    /* 
+    display: flex; 
+    adding this here makes it
+    impossible to manipulate
+    for learners working on
+    the task.
+    You have to use the .flex 
+    class inline instead to 
+    solve this issue or manipulate 
+    with js in styles.js
+    */
     align-items: center;
     width: 150px;
     margin: 20px 0 0 0;
@@ -31,7 +41,7 @@ section > div:nth-child(2) > * > span {
 }
 
 section > div:nth-child(2) > * > span:nth-child(1) {
-    display: flex;
+    /*display: flex; in styles.js*/
     align-items: center;
     justify-content: center;
     background: #e9480d;
@@ -44,7 +54,7 @@ section > div:nth-child(2) > * > span:nth-child(1) {
 }
 
 section > div:nth-child(2) > * > span:nth-child(2) {
-    display: block;
+    /*display: block; in styles.js*/
     height: max-content;
     margin: 0 20px 0 10px;
     font-size: 1.2em;

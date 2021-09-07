@@ -18,3 +18,13 @@ export const fixGlitch = () => {
         tag.classList.add('none');
     });
 }
+
+/* From filter.css other-ext */
+export const filterStyles = () => {
+    let spanParent = document.querySelectorAll('section > div:nth-child(2) div');
+    spanParent.forEach(span => { span.classList.add('flex');});   
+    let spanLeft = document.querySelectorAll('section > div:nth-child(2) span:nth-child(1)');
+    spanLeft.forEach(span => { span.classList.add('flex');});
+    let spanRight = document.querySelectorAll('section > div:nth-child(2) span:nth-child(2)');
+    spanRight.forEach(span => { span.classList.add('block');});
+}
