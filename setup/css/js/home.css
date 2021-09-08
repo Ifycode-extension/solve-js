@@ -11,13 +11,13 @@ body > header a {
    display: none;
 }
 
-body > article { /* ONE */
+body > article { /* ONE: in styles.js */
     /*display: flex;*/
     flex-direction: column;
 }
 
-body > article a{
-    display: none; /* TWO */
+body > article a {
+    display: none; /* TWO: in styles.js */
     width: 85%;
     margin: 0 auto;
     border: 2px solid transparent;
@@ -28,6 +28,26 @@ body > article a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
+
+body > article a#repo-lg,
+body > article a#repo-sm {
+    margin: 0 auto 30px auto;
+    border: 2px solid var(--themeColor);
+    color: #f04000;
+    transition: transform 0.25s ease-in;
+}
+
+body > article a#repo-lg:hover,
+body > article a#repo-sm:hover,
+body > article a#repo-lg:focus,
+body > article a#repo-sm:focus {
+    transform: scale(1.02) translateY(2px);
+    border: 2px solid transparent;
+    background: var(--themeColor);
+    color: white;
+}
+
+/* NB: Media query for a#repo-sm and a#repo-lg in styles.js instead */
 
 body > article a:hover,
 body > article a:focus {
