@@ -17,6 +17,7 @@ Solve js is a client-only single page application made by [@Ifycode](https://git
 
 ## Task instructions
 * These are vanilla tasks (no use of libraries or frameworks please)
+* Make sure you are running the index.html file - watch the [how to run and use app](#how-to-run-and-use-app) to see what the application (and url) should look like when opened in the browser, how to run the application, how the application works and how to make your changes without running into issues
 * You will find tasks (arranged in their respective folders) inside the `solve` folder
 * DO NOT make changes to any file that is not in the `solve` folder
 * See all sections below for further instructions
@@ -118,21 +119,27 @@ git merge main
 
 # How to run and use app
 
+Fixing youtube video... Video will be back up in some hours
+<!--
 [![solvejs-video-thumbnail](https://user-images.githubusercontent.com/45185388/132043799-6083c36b-9804-44d8-affb-aeebbe7278f9.png)](https://www.youtube.com/watch?v=7dcwFJtyzoM)
+-->
 
 # Tasks to work on
 
+Please ensure that you have followed the instructions in the previous sections and have watched the youtube video, before you begin any of the tasks.
+
 ## Task 1: Toggle task
 
-Find files to work with in the `toggle` folder which is inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
+Make the button toggle the div on and off like a switch, as shown in the .gif file below. Find files to work with in the `toggle` folder which is inside the `solve` folder.
 
-|![solvejs-toggle](https://user-images.githubusercontent.com/45185388/131866859-adb49d23-710b-4d89-a602-e146273fd785.gif)|
+|![solvejs-toggle](https://user-images.githubusercontent.com/45185388/132505399-e1088332-36b4-40d8-aa6c-65e4d5c925a7.gif)|
 |--|
 
 ## Task 2: Filter task
-Find files to work with in the `filter` folder which is inside the `solve` folder. Filter content based on colors as shown in the .gif image below. <!-- Display all content when the "All Colors" button is clicked on, and only display a specific color -->
+Filter content based on colors as shown in the .gif image below. Find files to work with in the `filter` folder which is inside the `solve` folder. <!-- Display all content when the "All Colors" button is clicked on, and only display a specific color -->
 
 |![solvejs-filter](https://user-images.githubusercontent.com/45185388/132273158-c074ff67-ba31-41fe-a982-acf1f71ae5a3.gif)|
 |--|
 
-
+## Task 3: Fetch task
+Fetch task and other tasks coming soon...
