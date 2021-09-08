@@ -91,18 +91,18 @@ Follow the steps in **commiting and pushing your changes** section, and submit t
 
 ## Pulling in new changes
 
-There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. You can always pull in changes from the upstream and merge into your created branch with these:
+There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. You can always pull in changes from the upstream and merge into your created branch following these steps:
 * Switch to the main branch:
 ````
 git checkout main
 ````
 
-* Pull in a new tasks or changes to your local computer with:
+* Pull in new tasks or changes to your local computer with:
 ````
 git pull upstream main
 ````
 
-* Update your main branch on github with:
+* Also update your main branch on github with the new changes:
 ````
 git push origin main
 ````
