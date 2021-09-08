@@ -102,7 +102,7 @@ git checkout main
 git pull upstream main
 ````
 
-* You can choose to update your main branch on github with:
+* Update your main branch on github with:
 ````
 git push origin main
 ````
