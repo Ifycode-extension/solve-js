@@ -10,7 +10,7 @@ Solve js is a client-only single page application made by [@Ifycode](https://git
 - [Branching instructions](#branching-instructions)
 - [Video: How to run and use app](#video-how-to-run-and-use-app)
 - [Tasks to work on](#tasks-to-work-on)
-  - [Take note](#take-note)
+  - [Read me first](#read-me-first)
   - [Task 1: Toggle task](#task-1-toggle-task)
   - [Task 2: Filter task](#task-2-filter-task)
   - [More tasks coming soon](#task-3-fetch-task)
@@ -75,17 +75,18 @@ To work on solve js tasks, just run the application on your local computer like 
 -->
 
 # Tasks to work on
-## Take note
+## Read me first
 * These are vanilla tasks (no use of libraries or frameworks please)
 * Ensure that you have followed the instructions in the previous sections before you begin any of the tasks
-* Watch the [how to run and use app video](#how-to-run-and-use-app) to learn how to run the application, how the application works and how to make your changes without running into issues
+* Watch the [how to run and use app video](#video-how-to-run-and-use-app) to learn how to run the application, how the application works and how to make your changes without running into issues
 * DO NOT make changes to any file that is not in the `solve` folder
 * You will find tasks (arranged in their respective folders) inside the `solve` folder
 * You will also find comments that will guide you in files that are inside the `solve` folder
+* [Submit a task once you have completed it](#how-to-submit) before moving to the next one.
 
 ## Task 1: Toggle task
 
-Make the button toggle the div on and off like a switch, as shown in the .gif file below. Find files to work with in the `toggle` folder which is inside the `solve` folder.
+Make the button toggle the div on and off like a switch, as shown in the .gif file below. Find files to work with in the `toggle` folder which is inside the `solve` folder. 
 
 |![solvejs-toggle](https://user-images.githubusercontent.com/45185388/132505399-e1088332-36b4-40d8-aa6c-65e4d5c925a7.gif)|
 |--|
