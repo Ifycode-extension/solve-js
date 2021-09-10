@@ -149,7 +149,7 @@ git merge main
 
 # Contributing to solve js project
 You are welcome to contribute to the solve js project whether you find or fix a bug in the application, or want to suggest features or tasks to be added. Just take note of the following:
-* The application is made without server or platform like nodejs and the likes on purpose. We don't want anyone participating in the tasks to struggling with any other setup or task apart from git and the vanilla javascript, which the project seeks to help participants improve upon. Also it is not limited to any framework or platform so that anyone interested can participate (as long as they have some knowledge of the javascript language).
+* The application is made without server or platform like nodejs and the likes on purpose. We don't want anyone participating in the tasks to be struggling with any other setup or task apart from (git and) vanilla javascript, which the project seeks to help participants improve upon. Also it is not limited to any framework or platform so that anyone interested can participate (as long as they have some knowledge of the javascript language).
 * Contributors should fork the repo, create a new branch from the main branch, make the changes there and send a pull request. Do not make changes directly in the main branch or merge your changes into the main branch on your end. @Ifycode will merge in your changes in the main branch of the original repo when you send a pull request. You can then pull in the changes from the main branch of the original repo to your fork's main branch. If you have made the mistake of adding your changes in the main branch, just delete that fork and fork the project again.
 
 # Star repo and share
