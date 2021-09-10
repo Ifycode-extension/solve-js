@@ -22,7 +22,7 @@ Solve js is a client-only single page application made by [@Ifycode](https://git
 
 # Setup instructions
 * Create a repo named **solve-js** in your own github account (do not initialize with a readme or any other file, just make sure the repo is empty)
-* Clone this (original) repo onto your computer: 
+* Clone [this original repo](https://github.com/gads-projects/solve-js) onto your computer: 
 ````
 git clone git@github.com:gads-projects/solve-js.git
 ````
