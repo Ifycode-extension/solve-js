@@ -116,11 +116,11 @@ git push origin solve-tasks
 ````
 
 # How to submit
-Follow the steps in **commiting and pushing your changes** section, and submit the link to your **solve-js** repo.
+Follow the steps in [commiting and pushing your changes](#commiting-and-pushing-your-changes) section, and submit the link to your **solve-js** repo. Don't host your solution.
 
 # Pulling in new changes
 
-There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the **setup instructions** section. You can always pull in changes from the upstream and merge into your created branch following these steps:
+There'll be more tasks added along the way and in some cases minor fixes for the application. Make sure you add original repo as the upstream as instructed in the [setup instructions](#setup-instructions) section. You can always pull in changes from the upstream and merge into your created branch following these steps:
 * Switch to the main branch:
 ````
 git checkout main
@@ -145,4 +145,4 @@ git checkout solve-tasks
 ````
 git merge main
 ````
-
+**Note:** You are only to merge the `main` branch into `solve-tasks` branch as shown above. Do not attempt to merge your solution in the `solve-tasks` branch into the `main` branch to avoid issues.
