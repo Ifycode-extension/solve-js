@@ -50,7 +50,7 @@ git push origin main
 Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
 
 # Branching instructions
-DO NOT make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin (like we did in the **check that setup is successful** section). 
+DO NOT make any changes to the `main branch` (to avoid problems). The only thing you are allowed to do in the main branch is to pull in changes from the upstream (i.e. original) repo. You can also push the content of the main branch on your local computer to the main branch in your remote origin (like we did in the [check that setup is successful](#check-that-setup-is-successful) section). 
 
 **Note**: Your solution to the tasks should be done in the `solve-tasks` branch. Create a branch named `solve-tasks` from your main branch:
 ````
@@ -68,11 +68,9 @@ git checkout branch-name-here
 ````
 
 # Video: How to run and use app
+Watch the this [youtube video tutorial](https://www.youtube.com/watch?v=KBv1IURk5D0) to take you through the following: the solve js application, how to run the application, where and how to write the solutions to the tasks, advice on how to go about testing that the `.html`, `.css` and `.js` files in the solve folder works etc.
 
-Fixing youtube video... Video will be back up in some hours
-<!--
-To work on solve js tasks, just run the application on your local computer like you would run any html project e.g. with VScode live server (extension). Work is still going on to make the client-only application suitable for production.
--->
+[![solvejs-youtube-thumbnail](https://user-images.githubusercontent.com/45185388/132788307-e6278368-6af7-42a6-8bd1-d91b6d452cf9.png)](https://www.youtube.com/watch?v=KBv1IURk5D0)
 
 # Tasks to work on
 ## Read me first
