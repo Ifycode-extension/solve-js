@@ -18,6 +18,7 @@ Solve js is a client-only single page application made by [@Ifycode](https://git
 - [How to submit](#how-to-submit)
 - [Pulling in new changes](#pulling-in-new-changes)
 - [Contributing to solve js project](#contributing-to-solve-js-project)
+- [Star repo and share](#star-repo-and-share)
 
 # Setup instructions
 * Create a repo named **solve-js** in your own github account (do not initialize with a readme or any other file, just make sure the repo is empty)
@@ -151,4 +152,5 @@ You are welcome to contribute to the solve js project whether you find or fix a 
 * The application is made without server or platform like nodejs and the likes on purpose. We don't want anyone participating in the tasks to struggling with any other setup or task apart from git and the vanilla javascript, which the project seeks to help participants improve upon. Also it is not limited to any framework or platform so that anyone interested can participate (as long as they have some knowledge of the javascript language).
 * Contributors should fork the repo, create a new branch from the main branch, make the changes there and send a pull request. Do not make changes directly in the main branch or merge your changes into the main branch on your end. @Ifycode will merge in your changes in the main branch of the original repo when you send a pull request. You can then pull in the changes from the main branch of the original repo to your fork's main branch. If you have made the mistake of adding your changes in the main branch, just delete that fork and fork the project again.
 
-**Star repo and share:** Let @Ifycode know what you think about the project. Give the repo github stars if you like it. Share the original repo with anyone you know needs it!
+# Star repo and share
+Let @Ifycode know what you think about the project. Give the repo a github star if you like it. Share the original repo with anyone you know needs it!
