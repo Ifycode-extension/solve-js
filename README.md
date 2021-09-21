@@ -3,7 +3,7 @@
 |<img width="1099" alt="Screenshot 2021-09-08 at 11 08 06 PM" src="https://user-images.githubusercontent.com/45185388/132592416-56f6e37e-a071-43a6-a901-af0962fb4660.png">|
 |--|
 
-> Production-ready version of app coming soon
+> Production-ready version of the spa coming soon
 
 Solve js is a client-only single page application built without a framework by [@Ifycode](https://github.com/Ifycode), containing vanilla javascript tasks. The project is built to help strengthen her mentee's knowledge at the Google Africa Developer Scholarship program on javascript (and additionally command line git), but anyone who finds this repo and is interested can participate. The tasks are based on features generally found in web applications. Run the application on your local computer like you would run any html project e.g. with VScode live server (extension). Scroll or follow the links below to setup and participate in the javascript tasks released.
 
