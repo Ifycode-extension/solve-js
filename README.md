@@ -1,7 +1,13 @@
 # Solve js
 
+|![solvejs-intro](https://user-images.githubusercontent.com/45185388/137259185-c2461dc6-97c3-49e6-b1d2-99de6b5342b8.gif)|
+|--|
+
+<!--
 |<img width="1099" alt="Screenshot 2021-09-08 at 11 08 06 PM" src="https://user-images.githubusercontent.com/45185388/132592416-56f6e37e-a071-43a6-a901-af0962fb4660.png">|
 |--|
+-->
+
 
 > Production-ready version of the spa coming soon
 
